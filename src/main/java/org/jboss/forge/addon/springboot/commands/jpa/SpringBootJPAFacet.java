@@ -141,7 +141,7 @@ public class SpringBootJPAFacet extends AbstractProjectFacet implements JPAFacet
    @Override
    public Version getSpecVersion()
    {
-      return SingleVersion.valueOf("2.1");
+      return SingleVersion.valueOf("2.3");
    }
 
    @Override
@@ -164,13 +164,12 @@ public class SpringBootJPAFacet extends AbstractProjectFacet implements JPAFacet
    @Override
    public boolean isInstalled()
    {
-//      FileResource<?> configFile = getConfigFile();
-//      if (!configFile.exists())
-//      {
-//         return false;
-//      }
-//      return getSpecVersion().toString().equals(getConfig().getVersion());
-      return false;
+      FileResource<?> configFile = getConfigFile();
+      if (!configFile.exists())
+      {
+         return false;
+      }
+      return getSpecVersion().toString().equals(getConfig().getVersion());
    }
 
    private static class SpringBootPersistenceDescriptor implements PersistenceDescriptor
