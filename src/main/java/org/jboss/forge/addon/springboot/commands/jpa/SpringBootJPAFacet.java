@@ -141,7 +141,7 @@ public class SpringBootJPAFacet extends AbstractProjectFacet implements JPAFacet
    @Override
    public Version getSpecVersion()
    {
-      return SingleVersion.valueOf("2.3");
+      return SingleVersion.valueOf("2.1");
    }
 
    @Override
