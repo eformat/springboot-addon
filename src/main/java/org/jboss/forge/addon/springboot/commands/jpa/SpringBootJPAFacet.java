@@ -164,12 +164,13 @@ public class SpringBootJPAFacet extends AbstractProjectFacet implements JPAFacet
    @Override
    public boolean isInstalled()
    {
-      FileResource<?> configFile = getConfigFile();
-      if (!configFile.exists())
-      {
-         return false;
-      }
-      return getSpecVersion().toString().equals(getConfig().getVersion());
+//      FileResource<?> configFile = getConfigFile();
+//      if (!configFile.exists())
+//      {
+//         return false;
+//      }
+//      return getSpecVersion().toString().equals(getConfig().getVersion());
+      return false;
    }
 
    private static class SpringBootPersistenceDescriptor implements PersistenceDescriptor
