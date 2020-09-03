@@ -69,7 +69,7 @@ public class SetupProjectCommand extends AbstractSpringBootCommand implements UI
    private static final String LATEST_STABLE_SPRING_BOOT_VERSION = "1.5.4.RELEASE";
    private static final String RHOAR_SUPPORTED_VERSION = "1.4.1.RELEASE";
    private static final String LATEST_1_4_SPRING_BOOT_VERSION = "1.4.7.RELEASE";
-   private static final String LATEST_2_0_VERSION = "2.0.0.M2";
+   private static final String LATEST_2_0_VERSION = "2.3.0.RELEASE";
 
    static {
       Collections.addAll(DEFAULT_SPRING_BOOT_VERSIONS, RHOAR_SUPPORTED_VERSION, LATEST_1_4_SPRING_BOOT_VERSION,
