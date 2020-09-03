@@ -30,7 +30,7 @@ public class SpringBootFacet extends AbstractProjectFacet {
          .setGroupId(SpringBootFacet.SPRING_BOOT_GROUP_ID)
          .setArtifactId(SpringBootFacet.SPRING_BOOT_STARTER_DATA_JPA_ARTIFACT)
          .setScopeType("provided");
-   private static final String SPRING_BOOT_STARTER_ARTIFACT = "spring-boot-starter";
+   private static final String SPRING_BOOT_STARTER_ARTIFACT = "spring-boot-starter-parent";
    private static final Dependency SPRING_BOOT_STARTER = DependencyBuilder.create()
          .setGroupId(SPRING_BOOT_GROUP_ID)
          .setArtifactId(SPRING_BOOT_STARTER_ARTIFACT);
